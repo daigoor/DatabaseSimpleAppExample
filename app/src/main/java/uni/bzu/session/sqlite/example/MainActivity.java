@@ -65,6 +65,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.btn_login) {
+            //UN COMMENT this code to run the AsyncTask
+            //I comment it in order to pass the login validation because we have no internet at the session
 //            new LoginAsyncTask().execute(username.getText().toString(), password.getText().toString(), URL_STR);
             continueWithValidLogin();
         }
